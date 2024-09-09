@@ -5,17 +5,16 @@ Paper Link: https://doi.org/10.1016/j.measurement.2023.112925
 ## Abstract
 Performance evaluation and inverse kinematics (IK) for continuum robots are always hard and time-consuming. In this paper, an efficient dexterity evaluation algorithm based on IK (DEAIK) for continuum robots is proposed. The IK model is established using an oval curve equation to improve computational efficiency. The relationship between length distributions and dexterity distribution is obtained by the simulation in this paper. Length distribution of the two-segment continuum robot is optimized under the guidance of the dexterity indices using the fruit fly algorithm. Theoretical analysis and numerical simulations demonstrate that the dexterity of the structure-optimized continuum robot is better than that of the traditional continuum robot. The simulation shows that the DEAIK algorithm is 3.68 times faster than the algorithm based on forward kinematics. The IK algorithm in this paper is 3 203 times faster than the IK algorithm based on the Levenberg-Marquardt algorithm in the same accuracy. This work is significant for designing a high-performance continuum robot.
 
-# fig1 - 机器人运动gif
-![](https://github.com/Scalpelapex/Images/blob/main/VC_CDPS/Overview.jpg)
+![](https://github.com/Scalpelapex/Images/blob/main/DEAIK/robot.gif))
 
 ## Algorithm principle
 Under the assumption of equal curvature, we use the solution space of Kepler oval curve as the forward kinematics solution space of single segment continuum, and then use the curve equation to explicitly obtain the inverse kinematics equation from Cartesian space coordinates to robot configuration space coordinates. Then, we introduce the flexibility evaluation ball as the evaluation index of space flexibility, and fuse the terminal attitude angle to define the flexible operation space. The optimal design ratio of the two segments of continuum is 0.37.
 
-# fig2 - 算法原理图
+![](https://github.com/Scalpelapex/Images/blob/main/DEAIK/method.jpg)
 
 ## Results
 
-# fig3 - 结果图
+![](https://github.com/Scalpelapex/Images/blob/main/DEAIK/results.jpg)
 
 
 ## Code
@@ -41,7 +40,8 @@ DEAIK_Solver.mlx -- main
 
 Note: Text Encoding: UTF-8
 ```
-
+## Prototype
+![](https://github.com/Scalpelapex/Images/blob/main/DEAIK/Structure.png)
 
 ## Citation
 
